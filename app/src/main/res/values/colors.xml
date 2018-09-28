@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9ec64e</color>
+    <color name="colorPrimaryDark">#9ec64e</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Other Colors -->
+    <color name="orange">#f1872a</color>
+    <color name="orangeDark">#eb602a</color>
+    <color name="aqua">#13b1a6</color>
+    <color name="aquaOpaque">#5BA6A3</color>
+    <color name="green">#057866</color>
+
+    <color name="yellow">#E8CA4D</color>
+    <color name="purple">#7420BC</color>
+    <color name="lightBlue">#40CBE2</color>
+    <color name="darkBlue">#2C8BF2</color>
+    <color name="lightGreen">#9ec64e</color>
+    <color name="lightRed">#e3223e</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="LightGreen2">#56955e</color>
+    <color name="LightGreen3">#d0e9d3</color>
+    <color name="LightGreen4">#a3d4a9</color>
+    <color name="LightGreen5">#d0e9d3</color>
+    <color name="LightGreen6">#282d9139</color>
+    <color name="grey">#5f000000</color>
+    <color name="FacebookBlue">#094fa0</color>
+    <color name="GoogleRed">#a71612</color>
+    <color name="TwitterLightBlue">#55acee</color>
+    <color name="UnselectedTab">#A1FFFFFF</color>
+    <color name="bluishGrey">#757e96</color>
+</resources>
