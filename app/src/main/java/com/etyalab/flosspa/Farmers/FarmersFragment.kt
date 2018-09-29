@@ -6,7 +6,9 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.etyalab.flosspa.FarmerDetail.FarmerDetailFragment
 import com.etyalab.flosspa.Models.Farmers
+import com.etyalab.flosspa.Models.Product
 import com.etyalab.flosspa.R
 import com.google.gson.GsonBuilder
 import kotlinx.android.synthetic.main.fragment_farmers.*
@@ -26,8 +28,8 @@ class FarmersFragment: Fragment() {
     }
 
     private fun fetchFarmersJson() {
-        val shopUrl = "https://api.mercaditoapp.com/api/v9/farmers"
-        val request = Request.Builder().url(shopUrl).build()
+        val url = "https://api.mercaditoapp.com/api/v9/farmers"
+        val request = Request.Builder().url(url).build()
         val client = OkHttpClient()
         client.newCall(request).enqueue(object: Callback {
             override fun onResponse(call: Call?, response: Response?) {
@@ -47,6 +49,17 @@ class FarmersFragment: Fragment() {
     }
 
     fun farmerClicked(farmer: Farmers){
-
+        val farmer = farmer
+        val fragment = FarmerDetailFragment.newInstance(farmer)
+        val fragmentManager = activity?.supportFragmentManager?.beginTransaction()
+        if (fragmentManager != null) {
+            fragmentManager.setCustomAnimations(
+                    R.anim.slide_in_right,
+                    R.anim.fade_out_slide_out_left
+            )
+            fragmentManager.replace(R.id.frame_layout, fragment)
+            fragmentManager.addToBackStack(null)
+            fragmentManager.commit()
+        }
     }
 }

@@ -6,6 +6,10 @@ import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.RequestBody
 
+
+val imageUrl = "https://api.mercaditoapp.com"
+
+
 fun get(url: String, context: Context, listener: Callback){
     val client = OkHttpClient()
     val request = Request

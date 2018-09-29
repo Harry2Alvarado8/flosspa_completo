@@ -7,8 +7,16 @@ data class Farmers(
         val id: String,
         @SerializedName("first_name")
         val name: String,
-        @SerializedName("lats_name")
+        @SerializedName("last_name")
         val lastName: String,
         @SerializedName("email")
-        val email: String
+        val email: String,
+        @SerializedName("image_url")
+        val imageUrl: String,
+        @SerializedName("province_name")
+        val province: String,
+        @SerializedName("address")
+        val address: String,
+        @SerializedName("farm_name")
+        val farmName: String
 )
